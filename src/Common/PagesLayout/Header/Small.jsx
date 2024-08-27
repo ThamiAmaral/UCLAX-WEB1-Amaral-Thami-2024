@@ -1,5 +1,5 @@
-import {useState} from "react";
-import styled from 'styled-components';
+import { useState } from "react";
+import styled from "styled-components";
 import Hamburger from "./Hamburger.jsx";
 
 /* Components ---------------------------*/
@@ -15,13 +15,13 @@ const Small = () => {
 
     const hideMenu = () => {
         showMenuUpdate(false);
-    }
+    };
 
     return (
         <SmallStyled>
             <Hamburger toggle={toggle} />
             <SiteLogo />
-            {showMenu && <MainMenu  onClick={hideMenu} />}
+            {showMenu && <MainMenu onClick={hideMenu} />}
         </SmallStyled>
     );
 };
@@ -47,9 +47,9 @@ const SmallStyled = styled.div`
         right: 0px;
         bottom: 0px;
 
-        z-index:100;
+        z-index: 100;
 
-        background-color: #034444;
+        background-color: #ffffff;
 
         a {
             display: block;
@@ -63,7 +63,7 @@ const SmallStyled = styled.div`
             &:hover,
             &:active,
             &:focus {
-                background-color: #002a2a;
+                background-color: #0b1f3c;
             }
         }
     }

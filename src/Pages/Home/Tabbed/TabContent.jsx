@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import { breakpoints } from '@/Common/useMediaQuery';
+import { breakpoints } from "@/Common/useMediaQuery";
 
 const TabContent = ({ curTab }) => {
     const { title, image, text } = curTab;
@@ -12,8 +12,8 @@ const TabContent = ({ curTab }) => {
                 <img src={image} alt={title} />
             </div>
             <div className="column2">
-            <h3>{title}</h3>
-            <div dangerouslySetInnerHTML={ { __html:text } }/>
+                <h3>{title}</h3>
+                <div dangerouslySetInnerHTML={{ __html: text }} />
             </div>
         </TabContentStyled>
     );
@@ -28,7 +28,7 @@ TabContent.propTypes = {
 
 const TabContentStyled = styled.div`
     padding: 20px;
-    background-color: teal;
+    background-color: #031f2e;
 
     @media ${breakpoints.isMediumAndUp} {
         display: grid;
@@ -49,7 +49,7 @@ const TabContentStyled = styled.div`
 
     p {
         font-size: 18px;
-        color: #8cc6c6;
+        color: white;
         margin-bottom: 20px;
         line-height: 150%;
     }

@@ -17,4 +17,8 @@ const Staff = () => {
 
 export default Staff;
 
-const StaffStyled = styled.div``;
+const StaffStyled = styled.div`
+    h1 {
+        color: #031f2e;
+    }
+`;

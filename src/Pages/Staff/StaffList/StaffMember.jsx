@@ -1,10 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
 import Accolades from "./Accolades/Accolades";
 
 const StaffMember = ({ member }) => {
-
     const { name, image, yearStarted, accolades } = member;
 
     return (
@@ -17,11 +16,11 @@ const StaffMember = ({ member }) => {
                     <b>Year Started:</b> {yearStarted}
                 </p>
 
-                <Accolades accolades={accolades}/>
+                <Accolades accolades={accolades} />
             </div>
         </StaffMemberStyled>
     );
-}
+};
 
 export default StaffMember;
 
@@ -44,7 +43,7 @@ const StaffMemberStyled = styled.div`
 
     h3 {
         color: white;
-        background-color: #014444;
+        background-color: #b70c0c;
         padding: 5px 10px;
         margin: 0px;
     }

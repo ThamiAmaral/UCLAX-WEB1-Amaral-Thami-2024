@@ -1,15 +1,14 @@
-import {useState} from "react";
-import styled from 'styled-components';
+import { useState } from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
-import {v4 as uuid} from "uuid";
+import { v4 as uuid } from "uuid";
 import axios from "axios";
 
 // components
 import Input from "./Input";
-import TextArea from ".TextArea";
+import TextArea from "./textArea";
 
 const Form = ({ getSubmissions }) => {
-
     const [inputName, setInputName] = useState("");
     const [inputEmail, setInputEmail] = useState("");
     const [inputMessage, setInputMessage] = useState("");
@@ -32,23 +31,21 @@ const Form = ({ getSubmissions }) => {
             name: inputName,
             email: inputEmail,
             message: inputMessage,
-
-        }
+        };
 
         await axios.post("http://localhost:4059/submissions", postData);
 
         getSubmissions();
 
         console.log("Submitted form");
-
     };
 
     return (
         <FormStyled onSubmit={onSubmit}>
-            <Input 
-                id="name" 
-                labelText="Name" 
-                onChange={inputNameOnChange} 
+            <Input
+                id="name"
+                labelText="Name"
+                onChange={inputNameOnChange}
                 value={inputName}
             />
             <Input
@@ -58,7 +55,7 @@ const Form = ({ getSubmissions }) => {
                 onChange={inputEmailOnChange}
                 value={inputEmail}
             />
-            <TextArea 
+            <TextArea
                 id="message"
                 labelText="Message"
                 onChange={inputMessageOnChange}
@@ -88,7 +85,8 @@ const FormStyled = styled.form`
         margin-bottom: 5px;
     }
 
-    input, textarea {
+    input,
+    textarea {
         font-size: 20px;
         padding: 10px;
         width: 100%;
@@ -101,7 +99,7 @@ const FormStyled = styled.form`
     }
 
     button {
-        background-color: teal;
+        background-color: #b70c0c;
         padding: 10px 5px;
         color: #fff;
         width: 150px;
@@ -112,7 +110,7 @@ const FormStyled = styled.form`
 
         &:hover,
         &:focus {
-            background-color: #015353;
+            background-color: #b70c0c;
         }
         &:active {
             background-color: #002020;

@@ -1,24 +1,24 @@
-import image1 from './img/Alex-Esqueda-Box-Jump.jpg';
-import image2 from './img/Tire-Flip.jpg';
-import image3 from './img/Kids.jpg';
+import image1 from "./img/Services.jpg";
+import image2 from "./img/OurWork.jpg";
+import image3 from "./img/TealCar.jpg";
 
 export const tabbedData = [
     {
         id: 1,
         image: image1,
-        title: 'About',
-        text: '<p>Join a <b>community</b> of people working hard every day to live a better quality of life, and have fun doing it!  At CrossFit Decimate, we provide inclusive programming, individualized modifications, and top-trained coaches to give you the best fitness journey  to fit your lifestyle.</p>',
+        title: "Our Services",
+        text: "<p>We offer all types of painting work. We will select the perfect color and the best paint for your car and repair exterior damage and defects.</p> <p>Contact us and get a free evaluation. We offer  warranty for all types of paint work. At Sunnyside Auto Repair we offer the following auto body paint services: whole car paint, painting of parts, painting of doors, bumpers, fenders, roofs, painting after an accident. </p>",
     },
     {
         id: 2,
         image: image2,
-        title: 'Mission',
-        text: '<p>At Decimate, we believe that just like your fitness journey, nutrition is not a “one size fits all”.  Our highly trained nutrition coaches work alongside you to help you achieve your optimal health and fitness goals.  Through one-on-one coaching and personalized nutrition programming, our coaches are able to determine the best nutrition plan for you.</p>',
+        title: "Our Work",
+        text: "<p>The immaculate work that is done by our team on a daily basis speaks for itself. We encourage you to read our google reviews and to take a look at the options we have. When it comes to automotive repainting there is no better choice in Buenos Aires for your car than Da Silva Paint. We work alongside your insurance company if you were involved in an accident. We have the most efficient car repair service in Brooklyn at the best rates.</p>",
     },
     {
         id: 3,
         image: image3,
-        title: 'Vision',
-        text: '<p>With our highly qualified and trained coach, Kara Smith, CrossFit Decimate is able to provide adaptive and inclusive workouts for each individual athlete, whether you are injured or working with a disability.  At CrossFit Decimate we believe that all people can workout and want to workout, they just need to be guided on how to achieve their goals.  Coach Kara offers modifications to each workout to help each athlete achieve their own level of success.  </p>',
+        title: "Our Materials",
+        text: "<p>Our ENAMEL DELUXE paint job begins with hand sanding for adhesion. All chrome and windows are protected by masking and automotive enamel paint is applied. This service comes with a 1 year written guarantee.</p> <p>The POLYCRYSTALINE FINISH begins with hand sanding for adhesion and is followed with dual action machine sanding. All chrome and windows are protected by masking and your car is painted with catalyzed automotive enamel. This service includes a 2 year written guarantee.  </p>",
     },
 ];

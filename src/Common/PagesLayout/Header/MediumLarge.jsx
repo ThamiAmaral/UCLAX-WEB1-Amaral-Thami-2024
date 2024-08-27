@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 /* Components ---------------------------*/
-import Inset from '../Inset.jsx';
-import SiteLogo from '../SiteLogo/SiteLogo.jsx';
+import Inset from "../Inset.jsx";
+import SiteLogo from "../SiteLogo/SiteLogo.jsx";
 import MainMenu from "./MainMenu.jsx";
 
 const MediumLarge = () => {
@@ -15,7 +15,7 @@ const MediumLarge = () => {
                         <SiteLogo />
                     </div>
                     <div className="menus">
-                    <MainMenu />
+                        <MainMenu />
                     </div>
                 </div>
             </Inset>
@@ -26,7 +26,8 @@ const MediumLarge = () => {
 export default MediumLarge;
 
 const MediumLargeStyled = styled.div`
-    color: white;
+    background-color: #ffffff;
+    color: var(--primary-color);
 
     .logo {
         .SiteLogo {
@@ -44,12 +45,12 @@ const MediumLargeStyled = styled.div`
 
             line-height: 30px;
             margin: 0px 0px 20px 5px;
-            border-bottom: solid 3px #84d4d4;
+            border-bottom: solid 3px #031f2e;
 
             text-align: center;
             font-size: 12px;
             opacity: 0.8;
-            color: #84d4d4;
+            color: #031f2e;
             font-weight: bold;
             text-decoration: none;
             text-transform: uppercase;
@@ -61,7 +62,7 @@ const MediumLargeStyled = styled.div`
             }
 
             &.active {
-                color: white;
+                color: #b70c0c;
                 border-bottom-color: white;
             }
         }
